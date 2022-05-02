@@ -1,0 +1,240 @@
+<template>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">
+          <nuxt-link to="/">ecosurf</nuxt-link>
+        </h2>
+        <nav class="nav desktop">
+          <ul>
+            <li class="nav__list">
+              <nuxt-link to="/blogs">Stories</nuxt-link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <video
+        autoplay
+        loop muted
+        src="https://res.cloudinary.com/terieyenike/video/upload/v1651393236/mixkit-tropical-island-landscape-view-4692-large_yanvml.mp4"></video>
+
+      <div class="overlay"></div>
+      <div class="text">
+        <h2 data-type="uppercase" class="stroke">Never Stop</h2>
+        <h3 data-type="uppercase">Exploring The World</h3>
+        <p>
+          View of the tropical island landscape, from a hill with houses, palm
+          trees and many trees, and in the distance the hills that surround the
+          sea, on a sunny day.
+        </p>
+      </div>
+
+
+      <ul class="social">
+        <li>
+          <a href="https://twitter.com/terieyenike" rel="noopener noreferrer" target="_blank"><img
+            alt="twitter profile" src="https://i.ibb.co/Wnxq2Nq/twitter.png"/></a>
+        </li>
+        <li>
+          <a href="https://instagram.com/terieyenike" rel="noopener noreferrer" target="_blank"><img
+            alt="instagram profile" src="https://i.ibb.co/ySwtH4B/instagram.png"/></a>
+        </li>
+      </ul>
+    </section>
+
+</template>
+
+<script>
+export default {
+  name: 'IndexPage',
+}
+</script>
+
+<style>
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+[data-type="uppercase"] {
+  text-transform: uppercase;
+}
+
+.stroke {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: all 0.3s ease-in 0.5s;
+  z-index: 2;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  padding: 2em;
+}
+
+.nav__list a {
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #78c3fb;
+  mix-blend-mode: overlay;
+}
+
+.text {
+  z-index: 10;
+  padding: 0 2em;
+}
+
+.text h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.text h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 1.1em;
+  color: #fff;
+  margin: 1.25em 0;
+  font-weight: 400;
+}
+
+.text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: letter-spacing 0.2s ease-in;
+}
+
+.text a:hover {
+  letter-spacing: 6px;
+}
+
+.social {
+  position: absolute;
+  z-index: 10;
+  bottom: 1.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.social li a {
+  display: inline-block;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: transform 0.3s ease-in;
+}
+
+.social li a:hover {
+  transform: scale(0.5) translateY(-0.94em);
+}
+
+.social > * + * {
+  margin-left: 1.25em;
+}
+
+header .logo {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.logo a {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .text p {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+
+  .text h2 {
+    font-size: 2rem;
+  }
+
+  .text h3 {
+    font-size: 2.5rem;
+  }
+}
+
+</style>
