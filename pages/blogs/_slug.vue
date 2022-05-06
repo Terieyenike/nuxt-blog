@@ -39,7 +39,7 @@
 export default {
   async asyncData({$content, route}) {
     const note = await $content(`blogs/${route.params.slug}`).fetch()
-    console.log(note)
+
     return {
       note
     }
