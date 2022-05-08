@@ -1,69 +1,81 @@
 # Blog for programming nomads
 
-## Build Setup
+Blog for programming nomads is a blog website created with NuxtJS, Nuxt Content Module, and Cloudinary that helps you
+build dynamic blog pages for readers. With Nuxt Content, you can write all your files in markdown, and it renders the
+page into a content that people would love to read.
 
-```bash
-# install dependencies
-$ yarn install
+![blog demo](https://user-images.githubusercontent.com/25850598/167312475-c9438ca5-1828-4308-a9ff-91dcd9979fae.png)
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+## Getting Started
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+To get the project up and running:
 
-# generate static project
-$ yarn generate
+1. clone the repository and navigate to the nuxt-blog folder
+
+```
+  $ git clone https://github.com/terieyenike/nuxt-blog
+  $ cd nuxt-blog/
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+2. install dependencies
 
-## Special Directories
+```
+  $ yarn install
+```
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+3. serve with hot reload at localhost:3000
 
-### `assets`
+```
+  $ yarn dev
+``` 
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+4. build for production and launch server
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+```
+  $ yarn build
+  $ yarn start
+```
 
-### `components`
+5. generate static project
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+```
+  $ yarn generate
+```
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+The blog will be available on the available port on localhost:
 
-### `layouts`
+`:3000` for the home page for the blog and has the route `:3000/blogs/` for all the articles and `:3000/blogs/slug`
+which will dynamically render the individual files and replace the slug to its file name.
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+## Contributing
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+We ❤️ pull requests, and we’re continually working hard to make it as easy as possible for developers to contribute.
+Before beginning development with the Blog for Programming Nomads, please familiarize yourself with the following developer
+resources:
 
+- Contributor Guide (CONTRIBUTING.md) to learn about how to contribute to Kong.
+- CODE_OF_CONDUCT
 
-### `pages`
+## Author
+Teri Eyenike
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+## Technologies
+- NuxtJS
+- Cloudinary
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+## License
+```
+Copyright 2022 Blog for Programming Nomads.
 
-### `plugins`
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+   http://www.apache.org/licenses/LICENSE-2.0
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
